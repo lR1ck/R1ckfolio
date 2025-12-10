@@ -38,36 +38,73 @@ function App() {
         />
       </div>
 
-      {/* ========== NAVEGACIÓN FIJA (z-index: 100) ========== */}
-      <div className="nav-container">
-        <GooeyNav
-          items={navItems}
-          particleCount={15}
-          particleDistances={[90, 10]}
-          particleR={100}
-          initialActiveIndex={0}
-          animationTime={600}
-          timeVariance={300}
-          colors={[1, 2, 3, 1, 2, 3, 1, 4]}
-        />
-      </div>
-
       {/* ========== CONTENIDO CON SCROLL (z-index: 1) ========== */}
       <div className="content-container">
 
         {/* HERO SECTION */}
         <section id="hero" className="section hero-section">
-          <div className="ascii-wrapper">
-            <ASCIIText
-              text='R1ck'
-              enableWaves={true}
-              
-              asciiFontSize={8}  
+          {/* Top Left: GooeyNav */}
+          <div className="corner-top-left">
+            <GooeyNav
+              items={navItems}
+              particleCount={15}
+              particleDistances={[90, 10]}
+              particleR={100}
+              initialActiveIndex={0}
+              animationTime={600}
+              timeVariance={300}
+              colors={[1, 2, 3, 1, 2, 3, 1, 4]}
             />
           </div>
-          <h2 className="subtitle">Full Stack Developer</h2>
 
-          {/* Indicador de scroll */}
+          {/* Top Right: Language & Theme Toggles */}
+          <div className="corner-top-right">
+            <div className="toggle-buttons-horizontal">
+              <button className="glass-button" title="Toggle Language">
+                <span>🌐</span>
+                <span className="toggle-label">ES</span>
+              </button>
+              <button className="glass-button" title="Toggle Theme">
+                <span>🌙</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Center: ASCII Text + Subtitle */}
+          <div className="hero-center">
+            <div className="ascii-wrapper-small">
+              <ASCIIText
+                text='R1ckfolio'
+                enableWaves={true}
+                asciiFontSize={5}
+                textFontSize={120}
+                planeBaseHeight={6}
+              />
+            </div>
+            <h2 className="subtitle-code">&lt;software developer&gt;</h2>
+          </div>
+
+          {/* Bottom Left: Social Links */}
+          <div className="corner-bottom-left">
+            <div className="social-buttons-vertical">
+              <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" className="glass-button social-button" title="LinkedIn">
+                <span>🔗</span>
+              </a>
+              <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" className="glass-button social-button" title="GitHub">
+                <span>🐙</span>
+              </a>
+              <a href="mailto:tu@email.com" className="glass-button social-button" title="Email">
+                <span>📧</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Bottom Right: Quote */}
+          <div className="corner-bottom-right">
+            <p className="quote-text">see you space cowboy...</p>
+          </div>
+
+          {/* Bottom Center: Scroll Indicator */}
           <a href="#about" className="scroll-indicator">
             <span>↓</span>
           </a>
@@ -253,7 +290,7 @@ function App() {
 
         {/* FOOTER */}
         <footer>
-          <p>© 2024 R1ck - Full Stack Developer</p>
+          <p>© 2025 R1ck - Full Stack Wizard</p>
         </footer>
 
       </div>
