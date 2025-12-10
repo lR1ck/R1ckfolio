@@ -76,9 +76,9 @@ function App() {
               <ASCIIText
                 text='R1ckfolio'
                 enableWaves={true}
-                asciiFontSize={5}
-                textFontSize={120}
-                planeBaseHeight={6}
+                asciiFontSize={6}
+                textFontSize={150}
+                planeBaseHeight={7}
               />
             </div>
             <h2 className="subtitle-code">&lt;software developer&gt;</h2>

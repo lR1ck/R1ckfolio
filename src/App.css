@@ -105,8 +105,8 @@ body {
 }
 
 .ascii-wrapper-small {
-  width: 500px;
-  height: 300px;
+  width: 800px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,8 +448,8 @@ body {
 
   /* Center content adjustments */
   .ascii-wrapper-small {
-    width: 350px;
-    height: 200px;
+    width: 550px;
+    height: 240px;
   }
 
   .subtitle-code {
@@ -538,8 +538,9 @@ body {
 
   /* Center content - smaller */
   .ascii-wrapper-small {
-    width: 280px;
-    height: 160px;
+    width: 90vw;
+    max-width: 450px;
+    height: 190px;
   }
 
   .subtitle-code {
